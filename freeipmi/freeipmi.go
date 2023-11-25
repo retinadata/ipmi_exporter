@@ -196,7 +196,7 @@ func GetSensorData(ipmiOutput Result, excludeSensorIds []int64) ([]SensorData, e
 			continue
 		}
 
-		data.Name = line[1]
+		data.Name = strings.Replace(strings.Trim(line[1], " \t"), " ", "_", -1)
 		data.Type = line[2]
 		data.State = line[3]
 
