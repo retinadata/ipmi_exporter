@@ -128,7 +128,7 @@ func (c IPMICollector) Name() CollectorName {
 }
 
 func (c IPMICollector) Cmd() string {
-	return "ipmimonitoring"
+	return "ipmi-sensors"
 }
 
 func (c IPMICollector) Args() []string {
