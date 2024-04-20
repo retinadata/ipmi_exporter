@@ -139,7 +139,7 @@ type IpmiSELEvent struct {
 }
 
 var defaultConfig = IPMIConfig{
-	Collectors: []CollectorName{IPMICollectorName, DCMICollectorName, BMCCollectorName, ChassisCollectorName, BMCWatchdogCollectorName, SELEventsCollectorName},
+	Collectors: []CollectorName{IPMICollectorName, DCMICollectorName, BMCCollectorName, ChassisCollectorName, BMCWatchdogCollectorName},
 }
 
 func checkOverflow(m map[string]interface{}, ctx string) error {
